@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5,CSS3,jQuery,Bootstrap 網頁設計基礎班</title>
+</head>
+
+<body>
+    <h1>HTML,CSS3,jQuery,Bootstrap網頁設計基礎班</h1>
+    <p><b>講師：張元鴻</b></p>
+    <h2>一：課程簡介</h2>
+    <p></p>
+    <p></p>
+    <h2>二：開發環境的建立</h2>
+    <h3>１＞安裝 Sublime Text3</h3>
+    <p>打造專屬的開發環境：Sublime Text 3+node.js</p>
+    <p>使用Sublime text 3來作為主要開發工具</p>
+    <p>下載安裝 Sublime Text 3：</p> <a href="https://www.sublimetext.com/3">    https://www.sublimetext.com/3</a>
+    <p>　　windows 環境建議下載安裝 windows <a href="https://download.sublimetext.com/Sublime%20Text%20Build%203103.zip">
+    portable version</a></p>
+    <h4>２＞安裝 Node.js</h4>
+    <p>必裝軟體：<b><a href="https://nodejs.org/en/"> Node.js</a></b></p>
+    <p>windows 環境建議下載 <a href="https://nodejs.org/dist/v4.4.0/node-v4.4.0-x64.msi">v4.4.0 LTS版本</a>s</p>
+    <h4>３＞安裝與設定常用 Package</h4>
+    <p>必裝 Package：Package control</p>
+    <h4>關於Package Control</h4>
+    <p>＊　基本上，Package Control 是把功能給整合到Command Palette之中，然後利用「Package」這個關鍵字來帶出相關的Package Control項目然後讓Sublime 3去執行指令。</p>
+    <p>＊　安裝後可去管理這些外掛 Install Package(安裝)、List Package(已安裝列表)、Remove Package(移除) 與 Upgrade Package(升級)</p>
+    <h4>安裝步驟</h4>
+    <p>Step 1，在 chrome 瀏覽器中搜尋 "package control install"，找到 Package Control 的安裝網頁：<a href="https://packagecontrol.io/installation">https://packagecontrol.io/installation</a></p>
+    <p>Step 2，將其中 for SUBLIME TEXT 3 的一段 Python 程式複製下來：</p>
+    <p>import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)</p>
+    <p>Step 3，開啟 Sublime Text 3，按＜Ctrl-～＞，在最底下的 console 中，按＜Enter＞執行。執行後會出現一個錯誤提示，結束安裝，不必理它。</p>
+    <p>Step 4，接著按＜Ctrl-Shift-P＞呼叫出 Package Control，在視窗中輸入＂PCI＂，搜尋＂Package Control: Install Package＂，點選安裝。</p>
+    <p>Step 5，同樣的方法，接著安裝 "htmlcssjs" 及 ＂emmet＂</p>
+    <p>Step 6，修改 node.js 的環境變數。</p>
+    <p>　　　　點選 Preference \ Package Setting \ HTML/CSS/Js \ Set 'node' Path，在視窗中第六行， "windows" 後的值改為 "node"。第 12 行,"format_on_save"　的值改為"true"。</p>
+    <p>基本上開發環境的建立工作即大功告成！</p>
+    <h2>三：基本的HTML</h2>
+</body>
+
+</html>
